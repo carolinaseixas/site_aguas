@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --fonte: 'Montserrat', sans-serif;
+    --preto: #1d1d1d;
+    --branco: #f6f6f6;
+    --branco-transparente: rgba(239, 239, 239, 0.50);
+    --cinza-transparente: #a2a2a280;
+    --azul: #2c3064;
+    --turquesa: #009cb5;
+}
+
+body{
+    box-sizing: border-box;
+    color: var(--preto);
+    background-color: var(--turquesa);
+}
+
+header{
+    display: flex;
+    margin-bottom: 5%;
+    background-image: url(../img/water-long.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 110%; 
+    background-color: var(--branco);
+    box-shadow: 0 5px 5px var(--cinza-transparente);
+}
+
+.logo{
+    max-width: 40%;
+    margin: auto 4%;
+}
+
+nav{
+    text-align: center;
+    margin: 5% 8%;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.botao{
+    text-decoration: none;
+    color: var(--preto);
+    padding: 6%;
+    margin: 8% 4%;
+    background-color: var(--branco-transparente);
+    box-shadow: 5px 5px 10px var(--preto);
+}
+
+.botao:hover{
+    background-color: rgba(239, 239, 239, 0.80);
+    font-weight: 700;
+}
+
+.active{
+    background-color: var(--branco);
+    font-weight: 700;
+}
+
+h1{
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 2.2rem; 
+    text-align: center;
+    margin: 8% 0;
+}
+
+p{
+    font-family: var(--fonte);
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 150%; 
+    margin: 0 5%;
+    text-align: justify;   
+}
+
+.foto{
+    width: 100vw;
+    margin: 5% 0;
+    max-width: 500px;
+}
+
+footer{
+    background-color: var(--preto);
+    padding: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.contato{
+    width: 10%;
+    padding: 3%;
+}
+
+@media screen and (min-width: 800px) {
+    body{
+        background-image: url("../img/nicolas-j-leclercq-sea.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 100%;
+    }
+    
+    header{
+        justify-content: space-between;
+        background-size: 100vw 100%;
+    }
+
+    .logo{
+        margin: 2% 6%;
+        max-width: 200px;
+    }
+
+    nav{
+        flex-flow: row wrap ;
+        width: 55%;
+        margin: 3%;
+        align-items: center;
+    }
+
+    .botao{
+        padding: 4%;
+        margin: 2%;
+        text-align: center;
+        height: 6%;
+    }
+
+    h1{
+        margin: 5% 0;
+    }
+
+    .foto{
+        display: block;
+        margin: 5% auto;
+    }
+
+    footer{
+        padding: auto;
+    }
+}

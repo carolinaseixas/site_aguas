@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+:root{
+    --fonte: 'Montserrat', sans-serif;
+    --preto: #1d1d1d;
+    --branco: #f6f6f6;
+    --branco-transparente: rgba(239, 239, 239, 0.50);
+}
+
+body{
+    background-image: url("../img/drop-white.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: block;
+    margin: 2% auto;
+    max-width: 60%;
+}
+
+nav{
+    text-align: center;
+    margin: 10%;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.botao{
+    text-decoration: none;
+    color: var(--preto);
+    padding: 4%;
+    margin: 8% 4%;
+    background-color: var(--branco-transparente);
+    box-shadow: 5px 5px 10px var(--preto);
+}
+
+.botao:hover{
+    background-color: rgba(239, 239, 239, 0.80);
+}
+
+@media screen and (min-width: 1000px) {
+    nav{
+        margin: 0 auto;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .botao{
+        padding: 2%;
+        margin: 8% 4%;
+    }
+}
